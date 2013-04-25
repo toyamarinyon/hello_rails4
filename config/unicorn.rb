@@ -9,8 +9,8 @@ preload_app true
 
 if ENV['RAILS_ENV'] == 'production'
   shared_path = "/var/www/#{application}/shared"
-  #stderr_path "#{shared_path}/log/unicorn.stderr.log"
-  #stdout_path "#{shared_path}/log/unicorn.stdout.log"
+  stderr_path "#{shared_path}/log/unicorn.stderr.log"
+  stdout_path "#{shared_path}/log/unicorn.stdout.log"
 end
 
 before_fork do |server, worker|
