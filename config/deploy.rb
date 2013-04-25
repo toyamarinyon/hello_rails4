@@ -1,5 +1,5 @@
 
-set :application, "hello_rail4"
+set :application, "hello_rails4"
 
 require 'capistrano_colors'
 require "bundler/capistrano"
@@ -10,6 +10,7 @@ set :rbenv_ruby_version, '2.0.0-p0'
 
 # リポジトリ
 set :scm, :git
+
 set :repository, "/home/vagrant/works/hello_rails4"
 set :deploy_via,  :copy
 set :branch, "master"
