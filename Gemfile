@@ -16,6 +16,9 @@ group :assets do
   gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  # Add Foundation Here
+  gem 'zurb-foundation',  '~> 4.0.0'
 end
 
 gem 'jquery-rails'
@@ -40,6 +43,7 @@ group :deployment do
   gem 'capistrano-ext'
   gem 'capistrano-rbenv'
   gem 'capistrano_rsync_with_remote_cache'
+  gem "capistrano-unicorn",  "~> 0.1.7"
 end
 
 # To use debugger

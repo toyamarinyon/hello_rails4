@@ -1,6 +1,7 @@
 application = 'hello_rails4'
 
 listen "/tmp/unicorn_#{application}.sock"
+listen 8080, :tcp_nopush => true
 pid "/tmp/unicorn_#{application}.pid"
 
 worker_processes 4;
